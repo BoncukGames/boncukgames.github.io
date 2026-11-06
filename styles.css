@@ -1,0 +1,33 @@
+:root{color-scheme:light;--background:#fff;--ink:#171717;--muted:#6b7280;--rule:#e7e9ee;--wide:960px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;background:var(--background);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{width:min(var(--wide),calc(100% - 48px));margin-inline:auto}
+.site-head{padding:32px 0}
+.brand{display:inline-flex;align-items:center;gap:12px}
+.brand__logo{display:block;width:42px;height:42px;object-fit:contain}
+.brand__text{font-size:.9rem;font-weight:750;letter-spacing:.12em}
+.home{display:grid;place-items:center;min-height:calc(100svh - 154px);padding:50px 0 80px}
+.home__content{max-width:610px;text-align:center}
+.home__mark{display:block;width:130px;height:130px;margin:0 auto 36px}
+.eyebrow{margin:0 0 13px;font-size:.76rem;letter-spacing:.22em;font-weight:750;color:#777;text-transform:uppercase}
+h1{font-size:clamp(3rem,9vw,5.8rem);font-weight:760;line-height:1.08;letter-spacing:-.065em;margin:0 0 22px}
+.lead{font-size:clamp(1.04rem,2.5vw,1.22rem);color:var(--muted);margin:0 auto;line-height:1.8;max-width:570px}
+.rule{width:52px;height:2px;background:#171717;margin:36px auto 0}
+.site-foot{border-top:1px solid var(--rule);padding:21px 0 24px;color:#858585;text-align:center;font-size:.84rem}
+.policy-main{padding:74px 0 120px}
+.policy{max-width:770px;margin:0 auto}
+.policy__intro{padding-bottom:46px;border-bottom:1px solid var(--rule)}
+.policy__intro h1{font-size:clamp(2.6rem,6vw,4.3rem);line-height:1.12;margin:11px 0 13px}
+.policy__subtitle{font-size:1.09rem;color:var(--muted);margin:0 0 20px}
+.policy__date{font-size:.84rem;color:#777;margin:0}
+.policy section{padding:34px 0;border-bottom:1px solid var(--rule)}
+.policy section:last-child{border-bottom:0}
+.policy h2{font-size:1.18rem;line-height:1.35;letter-spacing:-.025em;margin:0 0 13px}
+.policy p{color:#444;margin:0 0 14px;font-size:.97rem;line-height:1.84}
+.policy p:last-child{margin-bottom:0}
+.policy ul{padding:0 0 0 22px;color:#444;margin:0 0 15px}
+.policy li{margin:7px 0;line-height:1.75;font-size:.97rem}
+.policy strong{color:var(--ink)}
+.policy .placeholder{font-weight:700;color:#8a4613;background:#fff4e5;padding:2px 4px;border-radius:3px}
+@media (max-width:600px){.wrap{width:min(var(--wide),calc(100% - 36px))}.site-head{padding:23px 0}.brand__logo{width:36px;height:36px}.home{min-height:calc(100svh - 125px);padding:35px 0 70px}.home__mark{width:112px;height:112px;margin-bottom:30px}.policy-main{padding:52px 0 75px}.policy__intro{padding-bottom:33px}.policy section{padding:27px 0}}
